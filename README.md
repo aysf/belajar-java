@@ -95,3 +95,79 @@ example ternary:
 ```java
 String s = condition ? trueValue : falseValue;
 ```
+
+## Java Classes Define Objects
+
+- An object is an instance of a class
+- Nonprimitive variables are references to objects
+- Objects can have multiple references
+
+Example:
+
+```java
+public class ClothingItem {
+
+    // an instance variable a.k.a. a field
+    // since this doesn't have static keyword
+    // is NOT a member of the class itself
+    // it's a member of the instance of the class
+    public String type;
+
+    public static void main(String[] args) {
+        // this line has datatype 'ClothingItem' -> the name of the class
+        // the identifier -> the name of the variable
+        // the keyword 'new'
+        // and the constructor method
+        // this is called Instantiation
+        ClothingItem item = new ClothingItem();
+        item.type = "Hat";
+        item.displayItem();
+    }
+
+    // this is a method without static keyword
+    // called instance method
+    private void displayItem() {
+        System.out.println("this is a " + this.type);
+    }
+
+    private void displayItem() {
+        System.out.println("this is a " + this.type);
+    }
+}
+
+```
+
+### String is an object
+
+- String values are instances of `java.lang.String`
+
+Example:
+
+```java
+String str = new String("Hello!");
+// shortcut
+String str = "Hello!";
+```
+
+- String objects are immutable
+
+```java
+String str = "Halo";
+// re-assign like this is not changing object
+// but in fact, in the background, java direfrencing
+// the original object. the object can now be cleared
+// from memory in the process know as garbage collection
+String str = "Hai";
+```
+
+### Char Array to String
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        char[] chars = {'H', 'a', 'l', 'o'};
+        String s = new String(chars);
+        System.out.println(s);
+    }
+}
+```
