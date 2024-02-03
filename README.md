@@ -1,5 +1,11 @@
 # Belajar Java
 
+## Installation
+
+ref:
+- https://www.happycoders.eu/java/how-to-switch-multiple-java-versions-windows/
+
+
 ## Numeric Primitive Data Type
 
 | Data Type | Bits | Minimum                                                                         | Maximum       |
