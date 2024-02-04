@@ -4,6 +4,9 @@
 
 ref:
 - https://www.happycoders.eu/java/how-to-switch-multiple-java-versions-windows/
+- https://gist.github.com/EugenMayer/10b79dccf2a48c01c7b0e6cd11e0ce2c
+- https://sdkman.io/
+- https://www.jenv.be/
 
 
 ## Numeric Primitive Data Type
